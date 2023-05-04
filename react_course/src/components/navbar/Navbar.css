@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.navbar img {
+  width: 3rem;
+  aspect-ratio: 1;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #ff5400;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.navbar ul li a:hover {
+  color: #fff;
+  transition: 0.4s ease-in-out;
+}

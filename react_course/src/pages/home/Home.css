@@ -1,0 +1,68 @@
+.songs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.musics_container {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.music {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #9ebc9f;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  color: #010101;
+  box-shadow: 3px 2px 3px #4d4bb6;
+}
+
+.delete {
+  width: 2rem;
+  height: 1.5rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  background-color: #ff5400;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.title {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 1.4rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+form input {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #000000;
+  border-radius: 0.25rem;
+  width: 24rem;
+}
+
+.add {
+  margin-top: 1rem;
+  width: 20rem;
+  height: 2.5rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  background-color: #ee964b;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.25rem;
+}
