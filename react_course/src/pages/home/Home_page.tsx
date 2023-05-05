@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
+import { AppContext } from "../../App";
 import "./Home.css";
 
 interface Music {
@@ -9,6 +10,7 @@ interface Music {
 }
 
 const HomePage = () => {
+  const { username } = useContext(AppContext);
   const [musics, setMusics] = useState<Music[]>(
     JSON.parse(localStorage.getItem("musicsList") || "[]")
   );
@@ -66,7 +68,7 @@ const HomePage = () => {
   return (
     <div className="songs-container">
       <div className="songs">
-        <h2>Lists of songs</h2>
+        <h2>Lists of songs for {username}</h2>
         <div className="musics_container">
           {musics.length !== 0 ? (
             musics.map((music) => {

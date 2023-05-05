@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import "./Products.css";
+import { AppContext } from "../../App";
 
 interface Post {
   id: number;
@@ -8,6 +9,7 @@ interface Post {
 }
 
 const ProductsPage = () => {
+  const { username } = useContext(AppContext);
   const [posts, setPosts] = useState<Post[]>([]);
 
   useEffect(() => {
@@ -27,7 +29,7 @@ const ProductsPage = () => {
 
   return (
     <div className="products">
-      <h2>Products page</h2>
+      <h2>Products page for {username}</h2>
       {posts?.map((post) => (
         <p key={post.id}> - {post.title}</p>
       ))}
